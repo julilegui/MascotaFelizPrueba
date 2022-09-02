@@ -1,0 +1,49 @@
+﻿<h4>Buscar Dueños de mascotas</h4>
+
+<h4>Dueno</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="ShowSearchResults">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label for="Correo" class="control-label">Correo</label>
+                <input name="Correo" class="form-control" />
+                
+            </div>
+            <div class="form-group">
+                <label for="Identificacion" class="control-label">Identificacion</label>
+                <input name="Identificacion" class="form-control" />
+                
+            </div>
+            <div class="form-group">
+                <label for="Nombres" class="control-label">Nombres</label>
+                <input name="Nombres" class="form-control" />
+                
+            </div>
+            <div class="form-group">
+                <label for="Apellidos" class="control-label">Apellidos</label>
+                <input name="Apellidos" class="form-control" />
+                
+            </div>
+            <div class="form-group">
+                <label for="Direccion" class="control-label">Dirección</label>
+                <input name="Direccion" class="form-control" />
+                
+            </div>
+            <div class="form-group">
+                <label for="Telefono" class="control-label">Teléfono</label>
+                <input name="Telefono" class="form-control" />
+                
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Search" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
